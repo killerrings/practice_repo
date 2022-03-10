@@ -1,32 +1,28 @@
 import React from "react";
-import { Button, TextField, Container, Grid } from "@mui/material/";
+// import { Button, TextField, Container, Grid } from "@mui/material/";
 
 const Form = () => {
   return (
-    // <Container>
-    //   <h1>Form</h1>
-    //   <TextField label="Email" variant="outlined" />
-    //   <TextField label="Password" variant="outlined-required" />
-    // </Container>
     <div>
-      <Container>
-        <Grid container spacing={2}>
-          <Grid item xs={12}>
-            <TextField label="Email" variant="outlined" />
-          </Grid>
-          <Grid item xs={12}>
-            <TextField
-              id="outlined-password-input"
-              label="Password"
-              type="password"
-              autoComplete="current-password"
-            />
-          </Grid>
-          <Grid item xs={12}>
-            <Button variant="outlined">Submit</Button>
-          </Grid>
-        </Grid>
-      </Container>
+      <form action="submit" method="POST">
+        <label class="form-label">Email</label>
+        <input
+          type="text"
+          class="form-input"
+          name="email"
+          placeholder="Enter email"
+        />
+        <label class="form-label">Password</label>
+        <input
+          type="password"
+          class="form-input"
+          name="password"
+          placeholder="Enter password"
+        />
+        <button class="form-btn" type="submit">
+          Log in
+        </button>
+      </form>
     </div>
   );
 };
