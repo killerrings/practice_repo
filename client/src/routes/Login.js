@@ -28,18 +28,18 @@ const Login = ({ setToken }) => {
     <div className="login-wrapper">
       <h1>Login Form!!🚀</h1>
       <form onSubmit={handleSubmit}>
-        <label class="form-label">Email</label>
+        <label className="form-label">Email</label>
         <input
           type="text"
-          class="form-input"
+          className="form-input"
           name="email"
           placeholder="Enter email"
           onChange={(e) => setUsername(e.target.value)}
         />
-        <label class="form-label">Password</label>
+        <label className="form-label">Password</label>
         <input
           type="password"
-          class="form-input"
+          className="form-input"
           name="password"
           placeholder="Enter password"
           onChange={(e) => setPassword(e.target.value)}
